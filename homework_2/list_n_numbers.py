@@ -3,13 +3,12 @@
 
 number = int(input('Введите число: '))
 numbers = []
-sum =0
+sum_numbers =0
 count = 1
 while count<=number:
   numbers.append(round((1+1/count)**count,2))
   count+=1
-print('Последовательность чисел: ', numbers)
 for i in numbers:
-  sum +=i
-print('Сумма чисел: ', sum)
+  sum_numbers +=i
+print('Сумма чисел: ', sum_numbers)
 

@@ -1,20 +1,22 @@
 # Задайте список из N элементов, заполненных числами из промежутка[-N, N]. Найдите произведение элементов на указанных позициях. Позиции хранятся в файле file.txt в одной строке одно число.
 
-# number = int(input('Введите число: '))
-# numbers = []
-# count = -number
-# while count<=number:
-#   numbers.append(count)
-#   count+=1
-# print(numbers)
-numbers = [1,2,4,5,4]
-path = 'file.txt'
-data = open(path, 'r')
+number_current = int(input('Введите число: '))
+numbers_list = []
+count = -number_current
+while count<=number_current:
+  numbers_list.append(count)
+  count+=1
 
+path_file = 'file.txt'
+data_numbers = open(path_file, 'r')
+
+indexes_list = []
 result = 1
-for i in numbers:
-  for j in data:
-    result = result*
-print(result)
-data.close()
+for i in data_numbers:
+  indexes_list.append(int(i))
+data_numbers.close()
 
+result =1
+for j in indexes_list:
+  result *=numbers_list[j]
+print('Произведение чисел из заданного файла равно: ',result)
