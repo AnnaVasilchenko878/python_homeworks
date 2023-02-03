@@ -1,8 +1,8 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
-number = input('Введите число: ').replace('.', '0')
-number = list(number)
+number_current = input('Введите число: ').replace('.', '0')
+digit_list = list(number_current)
 result = 0
-for i in number:
+for i in digit_list:
     i = int(i)
     result += i
 print(result)
