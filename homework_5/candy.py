@@ -14,16 +14,21 @@ def players_data():
     return player
 
 
+print('Игрок 1')
 player_1 = players_data()
+print('Игрок 2')
 player_2 = players_data()
 
 
-first_player = random.randint(1, 2)
-if first_player == 1:
-    player_1['player_turn'] = True
-else:
-    player_2['player_turn'] = True
+def first_player():
+    first_player = random.randint(1, 2)
+    if first_player == 1:
+        player_1['player_turn'] = True
+    else:
+        player_2['player_turn'] = True
 
+
+first_player()
 
 candys = 2021
 

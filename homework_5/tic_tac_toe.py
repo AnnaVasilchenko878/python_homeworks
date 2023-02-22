@@ -38,7 +38,7 @@ def game_control():
             (input('Игрок ' + current_player + ' введите номер поля: ')))
         # доделать проверку если останется время
         if (game_step(index, current_player)):
-            if (current_player == 'X'):
+            if current_player == 'X':
                 current_player = 'O'
             else:
                 current_player = 'X'
